@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+}
+body{
+    background: url(./images.jpeg);
+    background-repeat: repeat-y;
+    background-size:cover;
+}
+.main{
+    height: 700px;
+    width: 800px;
+    background-color: transparent;
+    margin:auto;
+    display: block;
+}
+.header{
+    height: 40%;
+}
+.main h1{
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+}
+.main h3{
+    padding-bottom: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.container{
+    height: 20%;
+    width: 100%;
+    /* background-color: azure; */
+    padding: 10% 3%;
+    text-align: center;
+    font-size: 20px;
+    display:flex;
+    color: white;
+    /* flex-direction: row; */
+}
+.container input{
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.container select{
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.convert{
+    margin: 20px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.clear{
+    height: 10%;
+    width: 100%;  
+}
+.clear button{
+    padding: 10px;
+    background-color: red;
+    margin: auto;
+    font-size: 17px;
+    color:white;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.result{
+    /* background-color: azure; */
+    height: 15%;
+    padding-bottom: 10%;
+    text-align: center;
+    font-size: 25px;
+    color:greenyellow;
+}
+/* .input-temp{
+    margin-top: 5%;
+} */
+@media (min-width: 200px) and (max-width: 767px){
+    .main{
+        height: auto;
+        width: auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container input{
+        width: 60%;
+        height: 30px;
+        margin: 10px;
+    }
+    .container select{
+        width: 60%;
+        height: 30px;
+        margin: 10px;
+    }
+    .convert{
+        margin: 10px;
+    }
+    .clear{
+        align-items: center;
+    }
+    /* body{
+        background-repeat: repeat-y;
+    } */
+}
